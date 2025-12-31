@@ -1,0 +1,150 @@
+# =========================================================
+# Project metadata
+# =========================================================
+project:
+  name: "Morrow Plots APSIM Analysis"
+  author: "Richard Magala"
+  institution: "IOwa State"
+  date: "2025-08-21"
+  description: >
+    APSIM-based simulation and evaluation of corn yield and
+    soil organic carbon under long-term management systems.
+# =========================================================
+# APSIM versions bin keys
+# =========================================================
+APSIM:
+   7844: 'APSIM2025.8.7844.0'
+   7493: 'Provide it'
+# =========================================================
+# database output tables
+# =========================================================
+database_info:
+  tables:
+    morrow_plots:
+       carbon: 'Annual'
+       corn_grain: 'MaizeR'
+    nwrec:
+      carbon: 'carbon'
+      yield: 'nwrec'
+  columns:
+      morrow_plots:
+        measured_yield: "measured_yield"
+        predicted_yield: "grainwt"
+        measured_soc: "soc_Mg"
+        predicted_soc: "SOC_0_15CM"
+
+# =========================================================
+# Input data configuration
+# =========================================================
+
+paths:
+  apsimx_base_dir: "APSIMx_base_files"
+  weather_dir: "met"
+  output_dir: "outputs"
+  nwrec_dir: "yield_DATA"
+  Results: 'Results'
+  manuscript: 'Manuscripts 20251212'
+
+apsimx:
+   nwrec: 'nwrec_7939.apsimx'
+
+# =========================================================
+# Simulation settings
+# =========================================================
+simulation:
+  crop: "Maize"
+  rotation: "Continuous Corn"
+  years:
+    start: 1905
+    end: 2005
+  sites:
+    - calibration_site: "Northwestern Illinois Research Center"
+      latitude: 40.9306
+      longitude: -90.7272
+    - validation_site: "Morrow Plots"
+      latitude: 40.1090
+      longitude: -88.2270
+
+# =========================================================
+# Calibration parameters
+# =========================================================
+calibration:
+  cultivar: "OPVPH4"
+  parameters:
+    "[Leaf].Photosynthesis.RUE.FixedValue": 1.95
+    "[Phenology].GrainFilling.Target.FixedValue": 812
+    "[Grain].MaximumGrainsPerCob.FixedValue": 770
+  bounds:
+    "[Leaf].Photosynthesis.RUE.FixedValue": [1.2, 2.5]
+    "[Phenology].GrainFilling.Target.FixedValue": [600, 900]
+
+# =========================================================
+# Optimization configuration
+# =========================================================
+optimization:
+  method: "differential_evolution"
+  popsize: 300
+  maxiter: 60_000
+  workers: 14
+  loss_functions:
+    metric: "WIA"
+    direction: "maximize"
+
+# =========================================================
+# Evaluation metrics
+# =========================================================
+evaluation:
+  metrics:
+    - RMSE
+    - MAE
+    - RRMSE
+    - Bias
+    - ME
+    - WIA
+    - R2
+    - CCC
+  thresholds:
+    RRMSE:
+      very_good: 0.10
+      good: 0.15
+      satisfactory: 0.20
+
+# =========================================================
+# Plotting configuration
+# =========================================================
+plots:
+  save_format: ".png"
+  dpi: 600
+  x_fontsize: 22
+  y_fontsize: 22
+  x_ticks_fontsize: 18
+  y_ticks_fontsize: 18
+  legend_fontsize: 12
+  palette: [ "tan", "orange", "green",  "red", 'darkorchid']
+  COLOR_PALETTE: 'deep'
+
+
+
+# =========================================================
+# Runtime options
+# =========================================================
+runtime:
+  use_threads: False # where parallel processing is required
+  lazy_load: true
+  random_seed: 42
+
+simulated:
+  scenarios: 'scenario_data.db'
+# =============================
+# prices for EONR calculations
+# ================================
+prices:
+  nitrogen: 1.6 # Per kg N
+  corn_grain: 156.73  # Per Mg grain yield
+
+scripts:
+  evaluation: ['model_evaluation.py', 'apsim_validation_nwrec.py']
+  application: ['simulate_quadratic_fit_data.py','qp_model_soc_balance.py', 'qp_model_yield.py','qp_model_EONR.py', 'simulate_scenario_data.py']
+  plots: ['trends.py']
+
+

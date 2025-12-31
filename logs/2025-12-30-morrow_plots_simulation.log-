@@ -1,0 +1,17 @@
+2025-12-30 18:55:11 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:88 | Simulation started
+ ============================================================================
+
+ 
+2025-12-30 18:55:11 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:90 | running experiment:
+ 0.1, 0.37, 0.63, 0.9 residue  rates 137, 180, 217, 247 N rates 
+ and N  
+2025-12-30 18:55:44 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:148 | saved simulated results as csv to: D:\My_BOX\Box\MorrowPlotsRevisted2025\mp_reproducible_capsule\OutPuts\150_one grand simulation.csv
+2025-12-30 18:55:44 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:153 | succeeded running
+2025-12-30 18:55:45 | INFO | morrow_plots_simulation.log | data_manager.py:158 | Data loaded from apsimNGpy objects
+2025-12-30 18:55:45 | INFO | morrow_plots_simulation.log | data_manager.py:195 | Tables merged successfully!
+2025-12-30 18:55:46 | INFO | morrow_plots_simulation.log | data_manager.py:158 | Data loaded from apsimNGpy objects
+2025-12-30 18:55:46 | INFO | morrow_plots_simulation.log | data_manager.py:195 | Tables merged successfully!
+2025-12-30 18:55:46 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:173 | saved 1616 to table simulate_scenario_data to db:D:\My_BOX\Box\MorrowPlotsRevisted2025\mp_reproducible_capsule\Results\simulate_scenario_data.db
+2025-12-30 18:55:46 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:207 | Simulated using APSIM version: APSIM 2025.8.7844.0
+2025-12-30 18:56:16 | INFO | morrow_plots_simulation.log | trends.py:167 | plotting: moving averages from scenario simulated data
+2025-12-30 18:56:24 | INFO | morrow_plots_simulation.log | trends.py:265 | Simulated using APSIM version: APSIM 2025.8.7844.0

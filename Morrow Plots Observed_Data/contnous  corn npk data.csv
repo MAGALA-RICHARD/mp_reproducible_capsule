@@ -1,0 +1,15 @@
+year,soc,point,treatment
+1903,20.55574842,0, cc_npk_after_utc
+1933,17.43505178,1, cc_npk_after_utc
+1955,15.41833015,2, cc_npk_after_utc
+1966,16.91025864,3, cc_npk_after_utc
+1979,16.82954348,4, cc_npk_after_utc
+2004,16.38980501,5, cc_npk_after_utc
+1902,21.57409015,6, cc_npk_after_utc
+1903,21.4414708,0,cc_npk_after_mlp
+1932,21.00782179,1,cc_npk_after_mlp
+1955,19.46359419,2,cc_npk_after_mlp
+1966,20.02636019,3,cc_npk_after_mlp
+1979,19.85410835,4,cc_npk_after_mlp
+1979,19.85410835,5,cc_npk_after_mlp
+2005,18.31304398,6,cc_npk_after_mlp

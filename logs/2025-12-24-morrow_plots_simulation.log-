@@ -1,0 +1,42 @@
+2025-12-24 17:20:20 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:88 | Simulation started
+ ============================================================================
+
+ 
+2025-12-24 17:20:20 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:90 | running experiment:
+ 0.1, 0.37, 0.63, 0.9 residue  rates 137, 180, 217, 247 N rates 
+ and N  
+2025-12-24 17:20:39 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:148 | saved simulated results as csv to: D:\package\mp_reproducible_capsule\OutPuts\150_one grand simulation.csv
+2025-12-24 17:20:39 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:153 | succeeded running
+2025-12-24 17:20:41 | INFO | morrow_plots_simulation.log | data_manager.py:158 | Data loaded from apsimNGpy objects
+2025-12-24 17:20:41 | INFO | morrow_plots_simulation.log | data_manager.py:195 | Tables merged successfully!
+2025-12-24 17:20:41 | INFO | morrow_plots_simulation.log | data_manager.py:158 | Data loaded from apsimNGpy objects
+2025-12-24 17:20:41 | INFO | morrow_plots_simulation.log | data_manager.py:195 | Tables merged successfully!
+2025-12-24 17:20:41 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:173 | saved 1616 to table simulate_scenario_data to db:D:\package\mp_reproducible_capsule\Results\simulate_scenario_data.db
+2025-12-24 17:21:42 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:88 | Simulation started
+ ============================================================================
+
+ 
+2025-12-24 17:21:42 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:90 | running experiment:
+ 0.1, 0.37, 0.63, 0.9 residue  rates 137, 180, 217, 247 N rates 
+ and N  
+2025-12-24 17:22:00 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:148 | saved simulated results as csv to: D:\package\mp_reproducible_capsule\OutPuts\150_one grand simulation.csv
+2025-12-24 17:22:01 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:153 | succeeded running
+2025-12-24 17:22:02 | INFO | morrow_plots_simulation.log | data_manager.py:158 | Data loaded from apsimNGpy objects
+2025-12-24 17:22:02 | INFO | morrow_plots_simulation.log | data_manager.py:195 | Tables merged successfully!
+2025-12-24 17:22:02 | INFO | morrow_plots_simulation.log | data_manager.py:158 | Data loaded from apsimNGpy objects
+2025-12-24 17:22:03 | INFO | morrow_plots_simulation.log | data_manager.py:195 | Tables merged successfully!
+2025-12-24 17:22:03 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:173 | saved 1616 to table simulate_scenario_data to db:D:\package\mp_reproducible_capsule\Results\simulate_scenario_data.db
+2025-12-24 17:22:03 | INFO | morrow_plots_simulation.log | simulate_scenario_data.py:207 | Simulated using APSIM version: APSIM 2025.8.7844.0
+2025-12-24 17:23:40 | INFO | morrow_plots_simulation.log | qp_model_yield.py:25 | finding the optimum N fertilizer for SOC sequestration
+ ===========================================================================
+2025-12-24 17:23:43 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 249.97544307593714, 'plateau': 11.931915399614825, 'x_first_plateau_grid': 249.94148537134285, 'x_star': 249.97544307593714, 'y_star': 11.931915399614825, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.1', 'N Threshold': 512.7741378127427}
+2025-12-24 17:23:43 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 246.02208021726582, 'plateau': 11.872277516528868, 'x_first_plateau_grid': 246.02208021726582, 'x_star': 246.02208021726582, 'y_star': 11.872277516528868, 'grid_step': np.float64(0.08152038009502376), 'aligned': True, 'Residue': '0.37', 'N Threshold': 504.6994715436274}
+2025-12-24 17:23:44 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 243.61585435043003, 'plateau': 11.805903848928446, 'x_first_plateau_grid': 243.582895723931, 'x_star': 243.61585435043003, 'y_star': 11.805903848928446, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.63', 'N Threshold': 499.7026998507252}
+2025-12-24 17:23:45 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 241.40447933175247, 'plateau': 11.711426240460376, 'x_first_plateau_grid': 241.38184546136534, 'x_star': 241.40447933175247, 'y_star': 11.711426240460376, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.9', 'N Threshold': 495.1644186331609}
+2025-12-24 17:23:45 | INFO | morrow_plots_simulation.log | qp_model_yield.py:158 | 
+model,x_break_model,plateau,x_first_plateau_grid,x_star,y_star,grid_step,aligned,Residue,N Threshold
+qp,249.97544307593714,11.931915399614825,249.94148537134285,249.97544307593714,11.931915399614825,0.08152038009502376,False,0.1,512.7741378127427
+qp,246.02208021726582,11.872277516528868,246.02208021726582,246.02208021726582,11.872277516528868,0.08152038009502376,True,0.37,504.6994715436274
+qp,243.61585435043003,11.805903848928446,243.582895723931,243.61585435043003,11.805903848928446,0.08152038009502376,False,0.63,499.7026998507252
+qp,241.40447933175247,11.711426240460376,241.38184546136534,241.40447933175247,11.711426240460376,0.08152038009502376,False,0.9,495.1644186331609
+

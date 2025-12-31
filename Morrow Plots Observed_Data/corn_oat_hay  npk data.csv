@@ -1,0 +1,25 @@
+year,soc,point,treatment
+1904,24.56266165,0, coh_npk_after_mlp
+1932,27.22813308,1, coh_npk_after_mlp
+1955,27.56142723,2, coh_npk_after_mlp
+1966,29.50917,3, coh_npk_after_mlp
+1979,25.36033388,4, coh_npk_after_mlp
+2005,24.28080179,5, coh_npk_after_mlp
+1904,22.12497061,0, coh_npk_after_utc
+1933,20.94521514,1, coh_npk_after_utc
+1955,20.4358688,2, coh_npk_after_utc
+1967,22.4767811,3, coh_npk_after_utc
+1980,22.82770985,4, coh_npk_after_utc
+2005,20.99988244,5, coh_npk_after_utc
+1904,23,0, co_npk_after_utc
+1933,20,1, co_npk_after_utc
+1955,19,2, co_npk_after_utc
+1967,21,3, co_npk_after_utc
+1980,20,4, co_npk_after_utc
+2005,19,5, co_npk_after_utc
+1904,21,0, co_npk_after_mlp
+1933,23,1, co_npk_after_mlp
+1955,23,2, co_npk_after_mlp
+1967,24,3, co_npk_after_mlp
+1980,21,4, co_npk_after_mlp
+2005,18,5, co_npk_after_mlp

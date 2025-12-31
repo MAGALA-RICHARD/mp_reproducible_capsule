@@ -1,0 +1,13 @@
+year,soc,points,treatment
+1904,22.70642202,0, co_npk_after_utc
+1933,19.67889908,1, co_npk_after_utc
+1955,18.66972477,2, co_npk_after_utc
+1967,20.87155963,3, co_npk_after_utc
+1980,20.2293578,4, co_npk_after_utc
+2005,18.94495413,5, co_npk_after_utc
+1904,20.59633028,0, co_npk_after_mlp
+1933,23.44036697,1, co_npk_after_mlp
+1955,23.0733945,2, co_npk_after_mlp
+1967,23.62385321,3, co_npk_after_mlp
+1980,21.42201835,4, co_npk_after_mlp
+2005,18.21100917,5, co_npk_after_mlp
