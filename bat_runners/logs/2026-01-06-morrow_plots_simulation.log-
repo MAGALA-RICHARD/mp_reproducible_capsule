@@ -1,0 +1,40 @@
+2026-01-06 15:08:39 | INFO | morrow_plots_simulation.log | qp_model_soc_balance.py:29 | 
+ finding the optimum N fertilizer for SOC sequestration please wait 
+ ===========================================================================
+2026-01-06 15:08:52 | INFO | morrow_plots_simulation.log | qp_model_soc_balance.py:134 | {'model': 'qp', 'x_break_model': 182.5424263378348, 'plateau': 0.7707416275907484, 'x_first_plateau_grid': 182.5241310327582, 'x_star': 182.5424263378348, 'y_star': 0.7707416275907484, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.1', 'N Threshold': 142.80204479891214}
+2026-01-06 15:08:52 | INFO | morrow_plots_simulation.log | qp_model_soc_balance.py:134 | {'model': 'qp', 'x_break_model': 178.76990908864678, 'plateau': 0.9676213472020976, 'x_first_plateau_grid': 178.76990908864678, 'x_star': 178.76990908864678, 'y_star': 0.9676213472020976, 'grid_step': np.float64(0.08152038009502376), 'aligned': True, 'Residue': '0.37', 'N Threshold': 135.4622612837157}
+2026-01-06 15:08:53 | INFO | morrow_plots_simulation.log | qp_model_soc_balance.py:134 | {'model': 'qp', 'x_break_model': 175.98182154599, 'plateau': 1.2056773937541863, 'x_first_plateau_grid': 175.98182154599, 'x_star': 175.98182154599, 'y_star': 1.2056773937541863, 'grid_step': np.float64(0.08152038009502376), 'aligned': True, 'Residue': '0.63', 'N Threshold': 128.75447955988426}
+2026-01-06 15:08:54 | INFO | morrow_plots_simulation.log | qp_model_soc_balance.py:134 | {'model': 'qp', 'x_break_model': 172.7335668292267, 'plateau': 1.3664636260288816, 'x_first_plateau_grid': 172.7335668292267, 'x_star': 172.7335668292267, 'y_star': 1.3664636260288816, 'grid_step': np.float64(0.08152038009502376), 'aligned': True, 'Residue': '0.9', 'N Threshold': 123.60114792270245}
+2026-01-06 15:08:54 | INFO | morrow_plots_simulation.log | qp_model_soc_balance.py:139 | 
+model,x_break_model,plateau,x_first_plateau_grid,x_star,y_star,grid_step,aligned,Residue,N Threshold
+qp,182.5424263378348,0.7707416275907484,182.5241310327582,182.5424263378348,0.7707416275907484,0.08152038009502376,False,0.1,142.80204479891214
+qp,178.76990908864678,0.9676213472020976,178.76990908864678,178.76990908864678,0.9676213472020976,0.08152038009502376,True,0.37,135.4622612837157
+qp,175.98182154599,1.2056773937541863,175.98182154599,175.98182154599,1.2056773937541863,0.08152038009502376,True,0.63,128.75447955988426
+qp,172.7335668292267,1.3664636260288816,172.7335668292267,172.7335668292267,1.3664636260288816,0.08152038009502376,True,0.9,123.60114792270245
+
+2026-01-06 15:09:45 | INFO | morrow_plots_simulation.log | qp_model_yield.py:25 | finding the optimum N fertilizer for SOC sequestration
+ ===========================================================================
+2026-01-06 15:09:50 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 249.97544307593714, 'plateau': 11.931915399614825, 'x_first_plateau_grid': 249.94148537134285, 'x_star': 249.97544307593714, 'y_star': 11.931915399614825, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.1', 'N Threshold': 512.7741378127427}
+2026-01-06 15:09:52 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 246.02208021726582, 'plateau': 11.872277516528868, 'x_first_plateau_grid': 246.02208021726582, 'x_star': 246.02208021726582, 'y_star': 11.872277516528868, 'grid_step': np.float64(0.08152038009502376), 'aligned': True, 'Residue': '0.37', 'N Threshold': 504.6994715436274}
+2026-01-06 15:09:53 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 243.61585435043003, 'plateau': 11.805903848928446, 'x_first_plateau_grid': 243.582895723931, 'x_star': 243.61585435043003, 'y_star': 11.805903848928446, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.63', 'N Threshold': 499.7026998507252}
+2026-01-06 15:09:55 | INFO | morrow_plots_simulation.log | qp_model_yield.py:152 | {'model': 'qp', 'x_break_model': 241.40447933175247, 'plateau': 11.711426240460376, 'x_first_plateau_grid': 241.38184546136534, 'x_star': 241.40447933175247, 'y_star': 11.711426240460376, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.9', 'N Threshold': 495.1644186331609}
+2026-01-06 15:09:55 | INFO | morrow_plots_simulation.log | qp_model_yield.py:158 | 
+model,x_break_model,plateau,x_first_plateau_grid,x_star,y_star,grid_step,aligned,Residue,N Threshold
+qp,249.97544307593714,11.931915399614825,249.94148537134285,249.97544307593714,11.931915399614825,0.08152038009502376,False,0.1,512.7741378127427
+qp,246.02208021726582,11.872277516528868,246.02208021726582,246.02208021726582,11.872277516528868,0.08152038009502376,True,0.37,504.6994715436274
+qp,243.61585435043003,11.805903848928446,243.582895723931,243.61585435043003,11.805903848928446,0.08152038009502376,False,0.63,499.7026998507252
+qp,241.40447933175247,11.711426240460376,241.38184546136534,241.40447933175247,11.711426240460376,0.08152038009502376,False,0.9,495.1644186331609
+
+2026-01-06 15:10:35 | INFO | morrow_plots_simulation.log | qp_model_EONR.py:27 | finding the optimum N fertilizer for SOC sequestration
+ ===========================================================================
+2026-01-06 15:10:40 | INFO | morrow_plots_simulation.log | qp_model_EONR.py:331 | {'model': 'qp', 'x_break_model': 249.97544307593714, 'plateau': 11.931915399614825, 'x_first_plateau_grid': 249.94148537134285, 'x_star': 249.97544307593714, 'y_star': 11.931915399614825, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.1', 'N Threshold': 512.7741378127427}
+2026-01-06 15:10:42 | INFO | morrow_plots_simulation.log | qp_model_EONR.py:331 | {'model': 'qp', 'x_break_model': 246.02208021726582, 'plateau': 11.872277516528868, 'x_first_plateau_grid': 246.02208021726582, 'x_star': 246.02208021726582, 'y_star': 11.872277516528868, 'grid_step': np.float64(0.08152038009502376), 'aligned': True, 'Residue': '0.37', 'N Threshold': 504.6994715436274}
+2026-01-06 15:10:43 | INFO | morrow_plots_simulation.log | qp_model_EONR.py:331 | {'model': 'qp', 'x_break_model': 243.61585435043003, 'plateau': 11.805903848928446, 'x_first_plateau_grid': 243.582895723931, 'x_star': 243.61585435043003, 'y_star': 11.805903848928446, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.63', 'N Threshold': 499.7026998507252}
+2026-01-06 15:10:45 | INFO | morrow_plots_simulation.log | qp_model_EONR.py:331 | {'model': 'qp', 'x_break_model': 241.40447933175247, 'plateau': 11.711426240460376, 'x_first_plateau_grid': 241.38184546136534, 'x_star': 241.40447933175247, 'y_star': 11.711426240460376, 'grid_step': np.float64(0.08152038009502376), 'aligned': False, 'Residue': '0.9', 'N Threshold': 495.1644186331609}
+2026-01-06 15:10:45 | INFO | morrow_plots_simulation.log | qp_model_EONR.py:344 | 
+model,x_break_model,plateau,x_first_plateau_grid,x_star,y_star,grid_step,aligned,Residue,N Threshold
+qp,249.97544307593714,11.931915399614825,249.94148537134285,249.97544307593714,11.931915399614825,0.08152038009502376,False,0.1,512.7741378127427
+qp,246.02208021726582,11.872277516528868,246.02208021726582,246.02208021726582,11.872277516528868,0.08152038009502376,True,0.37,504.6994715436274
+qp,243.61585435043003,11.805903848928446,243.582895723931,243.61585435043003,11.805903848928446,0.08152038009502376,False,0.63,499.7026998507252
+qp,241.40447933175247,11.711426240460376,241.38184546136534,241.40447933175247,11.711426240460376,0.08152038009502376,False,0.9,495.1644186331609
+
