@@ -1,4 +1,12 @@
-This directory contains Windows .bat runner scripts. Simply double-click on any of the .bat files to start the execution automatically.
+Directions to run .bat scripts
+===================================
+On Windows (10+), this project includes several `.bat` scripts that provide a convenient entry point
+for running the main workflows (evaluation, simulation generation, model fitting, and scenario analysis) directly
+from the project root or this  dir. These scripts set up the execution context and launch the corresponding Python
+routines, allowing the full pipeline to be run without manually invoking individual commands or python code.
+
+
+ Simply double-click on any of the .bat files to start the execution automatically.
 
 OR
 
@@ -30,7 +38,11 @@ Tasks in .bat script:
 The first script will create a virtual environment, and also install all the requirements from the requirements.txt.
 That being said, the preceding script will execute right away.
 
-At the end of the simulation, a dialog prompt appears asking whether you want to close the window. This is intended to give you sufficient time to read the results printed in the console.
+At the end of the simulation, a dialog prompt appears asking whether you want to close the window.
+This is intended to give you sufficient time to read the results printed in the console.
+
+In the event of an error (e.g., a missing or improperly configured .env file), the script will
+prompt you to press a key to continue, after which the process will be aborted.
 
 Running the scripts in this folder has additional setup requirements: you must provide the accompanying
 `.env` file, manifest.yml and the `requirements.txt` included with this directory. If execution fails or
