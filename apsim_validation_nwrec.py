@@ -16,9 +16,11 @@ from pathlib import Path
 import os
 from utils import carbon_to_Mg, load_manifest, pbias, RESULTS
 from loguru import logger
+
+ThIS_DIR = Path(__file__).parent
 cfg = load_manifest()
 paths = cfg['paths']
-apsimx_dir = paths['apsimx_base_dir']
+apsimx_dir = ThIS_DIR / paths['apsimx_base_dir']
 dotenv.load_dotenv()
 higher_version = os.getenv('7939')
 home_path = Path.home() / higher_version
@@ -30,8 +32,9 @@ home_path = Path.home() / higher_version
 # ___________________________________
 
 # nwrec carbon
-dir_data = Path('./yield_DATA')
-cb = pd.read_csv(dir_data / 'nwrec_carbon_2.csv')
+dir_data = Path(ThIS_DIR / 'yield_DATA')
+dir_data = dir_data.resolve()
+cb = pd.read_csv(dir_data.resolve() / 'nwrec_carbon_2.csv')
 cb['observed_carbon'] *= 10
 cb['Plotid'] = cb['plotid']
 nwrec_soc = carbon_to_Mg(cb, conc_col='observed_carbon', bd_col='BD', depth_col='depth')
@@ -55,9 +58,9 @@ if __name__ == "__main__":
     val_res = RESULTS / stem
     val_res.mkdir(exist_ok=True)
     try:
-        dir_data = Path('yield_DATA')
+
         base_path = dir_data / 'base_opt.apsimx'
-        obs = read_csv('tmp.csv')
+        obs = read_csv(ThIS_DIR / 'tmp.csv')
         nwrec = obs.reset_index()
         nwrec.to_csv(dir_data / 'measured_yield_data_nwrec.csv', index=False)
         cmds_value_pair = {'[Phenology].GrainFilling.Target.FixedValue': 700,
@@ -109,13 +112,13 @@ if __name__ == "__main__":
             csv_name = os.path.realpath(val_res / f'{stem}.csv')
             logger.info(f'results saved to: {csv_name}')
             all_v_metrics.to_csv(csv_name, index=False)
-            p_df =  pd.DataFrame([params])
-            p_df.to_csv(val_res/f'{stem}_params.csv', index=False)
+            p_df = pd.DataFrame([params])
+            p_df.to_csv(val_res / f'{stem}_params.csv', index=False)
 
             carbon_ev['metrics']['Pbias'] = pb
             nwerec_metrics = pd.DataFrame([carbon_ev['metrics'], y_ev['metrics']])[
                 ['RMSE', 'RRMSE', 'MAE', 'ME', 'WIA', 'Pbias']]
-            nwerec_metrics.to_csv(Path(cfg['paths']['Results']) / 'nwerec_metrics.csv', index=False)
+            nwerec_metrics.to_csv(ThIS_DIR / cfg['paths']['Results'] / 'nwerec_metrics.csv', index=False)
 
 
     finally:

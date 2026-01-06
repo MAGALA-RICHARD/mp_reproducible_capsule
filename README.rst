@@ -224,7 +224,7 @@ Args (mva_plot):
 
 Side effects:
     - Saves a high-resolution PNG to `RESULTS`.
-    - Optionally opens the saved file via `open_file(...)`. open_file is defined in the utils module
+    - Optionally opens the saved file via `open_file(...)`. open_file is defined in the ``utils module``
 
 qp_model_yield.py
 =================
@@ -233,7 +233,7 @@ Created on Sunday Oct 26 2025:
 
 qp_model_soc_balance.py
 =======================
-Fits a quadratic model to the averageSOC balance, the difference ein SOC between the last and the fist year of the simulation
+Fits a quadratic model to the averageSOC balance, the difference in SOC between the last and the fist year of the simulation
 Created on Sunday Oct 27 2025:
 
 model_evaluation.py
@@ -256,5 +256,11 @@ contains the project dependencies
 .. tip::
 
   pip install -r requirements # pip managed env only
+
+I always prefer uv because its speed is unmatched
+
+.. code-block:: bash
+
+  uv pip install -r requirements
 
 

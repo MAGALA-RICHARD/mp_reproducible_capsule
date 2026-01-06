@@ -1,0 +1,15 @@
+from pathlib import Path
+
+def cleaner_up(pattern, recurse =False):
+    
+    if not recurse:
+        glob = Path(__file__).parent.glob
+    else:
+        glob =Path(__file__).parent.rglob
+    whereis = glob(pattern=pattern)
+    for i in whereis:
+        print(i)
+        i.unlink(missing_ok=True)
+        
+if __name__ == '__main__':
+    cleaner_up('*ap22sxx*')

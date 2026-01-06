@@ -118,7 +118,8 @@ AUTO = object()
 
 
 @cache
-def create_experiment(base_file, lonlat=None, start=1904, end=2005, out_path=None, site='morrow plots', bin_path: str|Path|AUTO=AUTO):
+def create_experiment(base_file, lonlat=None, start=1904, end=2005, out_path=None, site='morrow plots',
+                      bin_path: str | Path | AUTO = AUTO):
     """
 
     :param base_file: base file in directory in `APSIMX FILES`
@@ -140,10 +141,11 @@ def create_experiment(base_file, lonlat=None, start=1904, end=2005, out_path=Non
     if site == 'morrow plots':
         dir_path = path_to_MP_data
     else:
-        dir_path = Path(nwrec_dir)
+        dir_path = Path(__file__).parent / Path(nwrec_dir)
+    logger.info(f'Root of the apsimx file: {dir_path}',)
     model_path = dir_path / base_file
-    model_path = model_path.with_suffix('.apsimx')
-    out_path = out_path or f'out_{base_file}'
+    model_path = model_path.with_suffix('.apsimx').resolve()
+    out_path = Path(out_path or f'out_{base_file}').resolve()
     if not model_path.exists():
         raise FileNotFoundError(f"{model_path} \nis not found at {str(path_to_MP_data)}.\n Perhaps was deleted")
     if is_file_format_modified():

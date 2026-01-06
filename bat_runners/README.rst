@@ -1,3 +1,5 @@
+.. bat_script_doc
+
 Directions to run .bat scripts
 ===================================
 On Windows (10+), this project includes several `.bat` scripts that provide a convenient entry point
@@ -6,7 +8,7 @@ from the project root or this  dir. These scripts set up the execution context a
 routines, allowing the full pipeline to be run without manually invoking individual commands or python code.
 
 
- Simply double-click on any of the .bat files to start the execution automatically.
+Simply double-click on any of the .bat files to start the execution automatically.
 
 OR
 

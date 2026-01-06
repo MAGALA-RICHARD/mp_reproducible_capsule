@@ -41,7 +41,7 @@ Initial surface organic matter parameters:
  'NO3': 0.0,
  'P': 0.0,
  'StandingWt': 0.0,
- 'SurfOM': <System.Collections.Generic.List[SurfOrganicMatterType] object at 0x000001EFB1BA8D80>}
+ 'SurfOM': <System.Collections.Generic.List[SurfOrganicMatterType] object at 0x0000026B749810C0>}
 
 Experimented residue retention rates:
 '0.1, 0.37, 0.63, 0.9'

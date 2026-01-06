@@ -44,7 +44,7 @@ if exist "requirements.txt" (
 )
 
 REM --- Run scripts in order ---
-for %%S in (qp_model_soc_balance.py qp_model_yield.py qp_model_EONR.py ) do (
+for %%S in (./qp_model_soc_balance.py ./qp_model_yield.py ./qp_model_EONR.py ) do (
   if exist "%%S" (
     echo [RUN] python %%S
     python "%%S"

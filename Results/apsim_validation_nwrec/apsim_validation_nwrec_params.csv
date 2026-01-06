@@ -1,0 +1,2 @@
+[Leaf].Photosynthesis.RUE.FixedValue,[Phenology].Juvenile.Target.FixedValue,[Phenology].Photosensitive.Target.XYPairs.X,[Phenology].Photosensitive.Target.XYPairs.Y,[Phenology].FlagLeafToFlowering.Target.FixedValue,[Phenology].FloweringToGrainFilling.Target.FixedValue,[Phenology].GrainFilling.Target.FixedValue,[Phenology].Maturing.Target.FixedValue,[Phenology].MaturityToHarvestRipe.Target.FixedValue,[Rachis].DMDemands.Structural.DMDemandFunction.MaximumOrganWt.FixedValue,[Grain].MaximumGrainsPerCob.FixedValue
+2,211,"0, 12.5, 24","0, 0, 0",1,170,815,1,1,36,770

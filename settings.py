@@ -28,7 +28,7 @@ TILLAGE_DEPTH = 150
 # Please do not change these variable names
 BASE = Path(__file__).parent
 # path to the apsim file
-path_to_MP_data = Path.cwd() / 'Data-analysis-Morrow-Plots/APSIMX FILES'
+path_to_MP_data = BASE / 'Data-analysis-Morrow-Plots/APSIMX FILES'
 # path to the met file
 met_file = path_to_MP_data / 'urbana_mp_128yrs_of_met.met'
 # path to the outputs
